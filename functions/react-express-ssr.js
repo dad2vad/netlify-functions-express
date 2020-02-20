@@ -36,6 +36,7 @@ const Html = ({ body, styles, title }) => {
 const routerBasePath = (process.env.NODE_ENV === 'dev') ? `/${functionName}` : `/.netlify/functions/${functionName}/`
 
 app.get(routerBasePath, (req, res) => {
+  console.log(req.body)
   Data().then(users => {
     const reactAppHtml = renderToString(<App data={users} />)
     const html = Html({
