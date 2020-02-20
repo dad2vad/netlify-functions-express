@@ -315,6 +315,6 @@ export default function expressApp(functionName) {
   router.use(cors())
   router.use(bodyParser.json())
   router.use(bodyParser.urlencoded({ extended: true }))
-
+console.log(app)
   return app
 }
