@@ -14,7 +14,7 @@ const server = awsServerlessExpress.createServer(app, null, binaryMimeTypes)
 
 // Export Lambda handler
 exports.handler = (event, context) => {
-  console.log(JSON.stringify(event.body,null,4))
+  console.log(event.body)
 
   return awsServerlessExpress.proxy(server, event, context)
 }
