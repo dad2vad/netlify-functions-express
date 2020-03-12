@@ -38,6 +38,18 @@ class App extends Component {
           <a className='link' href="/.netlify/functions/serverless-http">
             Example using `serverless-http` module
           </a>
+        <a className='link' href="/.netlify/functions/serverless-http/users">
+            Example using `serverless-http/users` module
+          </a>
+                      <a className='link' href="/.netlify/functions/serverless-http/hello">
+            Example using `serverless-http/hello` module
+          </a>
+                <a className='link' href="/.netlify/functions/standalone-aws-serverless-express-example">
+            Example using `serverless-http` module
+          </a>
+          <a className='link' href="/.netlify/functions/vue-ssr">
+            Example using React serverside rendering
+          </a>
           <a className='link' href="/.netlify/functions/react-express-ssr">
             Example using React serverside rendering
           </a>
